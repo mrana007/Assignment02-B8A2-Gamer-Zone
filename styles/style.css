@@ -41,6 +41,7 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+
 }
 
 .icon-logo {
@@ -190,10 +191,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
-.game-card img {
+.game-card img{
     width: 100%;
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 
@@ -238,11 +238,11 @@
 .menus-container {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     gap: 30px;
-    min-height: 300px;
     max-width: 1440px;
+    min-height: 300px;
     margin: 0 auto 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     padding: 0 30px;
     align-content: center;
     justify-content: center;
@@ -258,7 +258,7 @@
 }
 
 .menu-item:hover {
-    border: 1px solid palevioletred;
+    border: 1px solid plum;
 }
 
 .menu-item img {
@@ -279,6 +279,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* footer container  start */
 footer {
     text-align: center;
@@ -323,22 +324,22 @@ footer {
     font-weight: 500;
 }
 
-.footer-copyright a {
+.copyright a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.60);
     font-size: 0.6rem;
     font-weight: 500;
 }
 
-@media screen and (max-width:426px) {
+/* media queries for mobile device */
+
+@media screen and (max-width:425px) {
     .icon-logo {
         padding: 10px;
-    }
-
+    } 
     .nav-title {
         flex-direction: column;
     }
-
     .menu-container {
         flex-direction: column;
         gap: 30px;
@@ -346,7 +347,6 @@ footer {
     .banner-container {
         flex-direction: column-reverse;
     }
-
     .banner-content {
         width: 100%;
         padding-left: 15px;
@@ -357,14 +357,20 @@ footer {
     .banner-img {
         width: 100%;
     }
+    .game-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .game-card{
+        flex-direction: column;
+    }
 
-    .game-grid {
-        grid-template-columns: 1fr;
+    .play-game {
+        flex-direction: column-reverse;
         width: 70%;
     }
 
     .play-game-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .play-game-title {
@@ -376,57 +382,55 @@ footer {
         width: fit-content;
         margin-top: 50px;
     }
-    .play-game-img img{
-        width: 400px;
+
+    .play-game-img img {
+        width: 300px;
         height: 350px;
-        padding-left: 00px;
+        padding-left: 0px;
     }
-    .play-game-footer-img{
+
+    .play-game-footer-img {
         position: relative;
         bottom: 100px;
-        padding-left: 280px;
-    
+        padding-left: 200px;
+
     }
-    .play-game-footer-img img{
+
+    .play-game-footer-img img {
         width: 170px;
         height: 190px;
     }
 
-    .menus-container{
-        min-height: 400px;
-        max-width: 100%;
+    .menus-container {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .menu-item{
+
+    .menu-item {
         flex-basis: 50px;
     }
 
     .footer-support a {
         text-decoration: none;
         color: #FFF;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 600;
     }
-    
+
     .footer-icon .fa-brands {
         padding-right: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
-        font-size: 25px;
+        font-size: 1.5rem;
     }
-    
-
 }
 
-
-
-/* for tablet device */
+/* media queries for tablet device */
 
 @media screen and (min-width:426px) and (max-width:769px) {
 
-    .logo-container {
+    .icon-logo {
         padding: 10px;
     }
-
 
     .banner-content {
         width: 100%;
@@ -441,22 +445,26 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         width: 70%;
     }
+
     .play-game-title {
         text-align: left;
         padding: 0 0 0 20px;
     }
-    .play-game-img img{
+
+    .play-game-img img {
         width: 300px;
         height: 250px;
         padding-left: 00px;
     }
-    .play-game-footer-img{
+
+    .play-game-footer-img {
         position: relative;
         bottom: 100px;
         padding-left: 180px;
-    
+
     }
-    .play-game-footer-img img{
+
+    .play-game-footer-img img {
         width: 170px;
         height: 190px;
     }
