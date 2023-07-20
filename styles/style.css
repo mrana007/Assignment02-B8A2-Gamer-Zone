@@ -40,7 +40,8 @@
     display: flex;
     align-items: center;
     max-width: 1440px;
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -102,12 +103,11 @@
 .banner-container {
     display: flex;
     max-width: 1440px;
-    margin: 0 auto;
     min-height: 50px;
 }
 
 .banner-content {
-    background-image: url(/images/Group\ 14.png);
+    background-image: url(images/Group\ 14.png);
     background-size: 100%;
     width: 50%;
     text-align: left;
@@ -129,14 +129,13 @@
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .banner-content p {
     color: #534C64;
     font-size: 0.8rem;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .banner-icon {
@@ -152,7 +151,6 @@
     padding: 18px 38px;
     border-radius: 3rem;
     background: #FF42A5;
-    margin-top: 10px;
 }
 
 .rouge-btn {
@@ -170,7 +168,6 @@
 }
 
 .banner-img img {
-    padding-left: 60px;
     width: 90%;
     height: 100%;
 }
@@ -184,8 +181,7 @@
 
 .game-grid {
     max-width: 1440px;
-    width: 80%;
-    margin: 20px auto 0;
+    padding: 20px 100px;
     min-height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -194,7 +190,6 @@
 .game-card img{
     width: 100%;
     display: flex;
-    margin: 0 auto;
 }
 
 /* play game section styles */
@@ -212,8 +207,8 @@
 }
 
 .play-game-img img {
-    width: 530px;
-    height: 430px;
+    width: 550px;
+    height: 450px;
     padding-left: 100px;
 }
 
@@ -224,8 +219,8 @@
 }
 
 .play-game-footer-img img {
-    width: 320px;
-    height: 230px;
+    width: 300px;
+    height: 200px;
 }
 
 .play-game-title {
@@ -240,10 +235,9 @@
     gap: 30px;
     max-width: 1440px;
     min-height: 300px;
-    margin: 0 auto 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 0 30px;
+    padding: 0 100px;
     align-content: center;
     justify-content: center;
 }
@@ -286,7 +280,7 @@ footer {
     padding: 70px;
     background: #0B0223;
     max-width: 1440px;
-    margin: 20px auto 0;
+    padding: 20px auto 0;
     min-height: 350px;
 }
 
@@ -301,7 +295,7 @@ footer {
     color: white;
 }
 
-.footer-support a {
+.footer-option a {
     text-decoration: none;
     color: #FFF;
     padding: 15px;
@@ -316,7 +310,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.footer-terms a {
+.footer-action a {
     text-decoration: none;
     padding: 15px;
     color: rgba(255, 255, 255, 0.60);
@@ -324,7 +318,7 @@ footer {
     font-weight: 500;
 }
 
-.copyright a {
+.copyright small {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.60);
     font-size: 0.6rem;
